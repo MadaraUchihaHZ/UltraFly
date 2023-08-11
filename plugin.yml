@@ -1,0 +1,14 @@
+name: fly
+version: 1.0.0
+api: [5.0.0]
+main: fly\Main
+author: aqua
+description: A plugin to enable and disable flying with permission check.
+commands:
+  fly:
+    description: Toggle flying
+    permission: fly.cmd
+permissions:
+  fly.cmd:
+    description: "Allows the user to toggle fly."
+    default: true
