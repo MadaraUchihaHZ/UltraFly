@@ -1,14 +1,14 @@
-name: fly
+name: UltraFly
 version: 1.0.0
 api: [5.0.0]
-main: fly\Main
+main: aqua\UltraFly
 author: aqua
 description: A plugin to enable and disable flying with permission check.
 commands:
   fly:
     description: Toggle flying
-    permission: fly.cmd
+    permission: UltraFly.cmd
 permissions:
-  fly.cmd:
+  UltraFly.cmd:
     description: "Allows the user to toggle fly."
     default: true
