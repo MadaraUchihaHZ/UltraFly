@@ -1,6 +1,6 @@
 <?php
 
-namespace fly;
+namespace aqua\UltraFly;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
         if ($command->getName() === "fly" && $sender instanceof Player) {
-            if ($sender->hasPermission("fly.cmd")) {
+            if ($sender->hasPermission("UltraFly.cmd")) {
                 $this->toggleFly($sender);
             } else {
                 $sender->sendMessage(TF::RED . "You don't have permission to use this command.");
